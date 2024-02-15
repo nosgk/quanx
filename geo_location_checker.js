@@ -74,7 +74,6 @@ var description = '国家：' + obj['countryCode'] + ' ' + obj['country'] + '\n'
   + 'IP：' + obj['query'] + '\n'
   + '服务商：' + obj['isp'] + '\n'
   + 'ASN：' + obj['as'] + '\n'
-  
   + '经纬度：' + obj['lat'] + ' / ' + obj['lon'] + '\n'
   + '时区：' + obj['timezone'] + '\n'
   + '货币:' + obj['currency'] +flags.get(obj['currency']);
