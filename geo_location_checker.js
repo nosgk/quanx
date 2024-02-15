@@ -1,10 +1,9 @@
 /*
 *修改自https://github.com/fmz200/wool_scripts/blob/main/QuantumultX/scripts/server_location.js
 *感谢@fmz200
+*
 *本人频道
 *https://t.me/Ruhuhub
-*# [general]
-*# geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://gist.githubusercontent.com/nosgk/1bfc48303fc98b9d2aef1468d07d5f5e/raw/aebb00f037d19d67e7e98d6a430dee5852d959b5/server_location_1.js
 */
 
 if ($response.statusCode != 200) {
@@ -75,6 +74,7 @@ var description = '国家：' + obj['countryCode'] + ' ' + obj['country'] + '\n'
   + 'IP：' + obj['query'] + '\n'
   + '服务商：' + obj['isp'] + '\n'
   + 'ASN：' + obj['as'] + '\n'
+  
   + '经纬度：' + obj['lat'] + ' / ' + obj['lon'] + '\n'
   + '时区：' + obj['timezone'] + '\n'
   + '货币:' + obj['currency'] +flags.get(obj['currency']);
