@@ -69,14 +69,17 @@ var subtitle = obj['isp'] + ' ' + '|' + ' ' + obj['query'];
 // 不展示
 var ip = obj['query'];
 // 长按节点选择“查看节点信息”时的信息
-var description = '国家：' + obj['countryCode'] + ' ' + obj['country'] + '\n'
-  + '地区：' + obj['region'] + ' ' + city_check(obj['regionName']) + '\n'
-  + 'IP：' + obj['query'] + '\n'
-  + '服务商：' + obj['isp'] + '\n'
-  + 'ASN：' + obj['as'] + '\n'
-  + '经纬度：' + obj['lat'] + ' / ' + obj['lon'] + '\n'
-  + '时区：' + obj['timezone'] + '\n'
-  + '货币:' + obj['currency'] +flags.get(obj['currency']);
+var description = obj['continentCode'] + ' ' + obj['continent'] + '\n'
+  + '🗺️国家：' + obj['countryCode'] + ' ' + obj['country'] + '\n'
+  + '🌏地区：' + obj['region'] + ' ' + city_check(obj['regionName']) + '\n'
+  + '🖥️IP：' + obj['query'] + '\n'
+  + '🪚reverseDNS：' + obj['reverse'] + '\n'
+  + '👮‍♀️ISP：' + obj['isp'] + '\n'
+  + '👮‍♀️ASN编号组织：' + obj['as'] + '\n'
+  + '👮‍♀️AS名称：' +obj['asname'] + '\n'
+  + '📍经纬度：' + obj['lat'] + ' / ' + obj['lon'] + '\n'
+  + '🛌时区：' + obj['timezone'] + ' / ' + obj['offset'] + '秒' +'\n'
+  + '🪙货币:' + obj['currency'] +flags.get(obj['currency']);
 $done({title, subtitle, ip, description});
 
     
