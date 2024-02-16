@@ -71,7 +71,7 @@ var ip = obj['query'];
 // 长按节点选择“查看节点信息”时的信息
 var description = obj['continentCode'] + ' ' + obj['continent'] + '\n'
   + '🗺️国家：' + obj['countryCode'] + ' ' + obj['country'] + '\n'
-  + '🌏地区：' + obj['region'] + ' ' + city_check(obj['regionName']) + '\n'
+  + '🌏地区：' + obj['region'] + ' ' + city_check(obj['regionName']) + obj['city'] + '\n'
   + '🖥️IP：' + obj['query'] + '\n'
   + '🪚reverseDNS：' + obj['reverse'] + '\n'
   + '👮‍♀️ISP：' + obj['isp'] + '\n'
